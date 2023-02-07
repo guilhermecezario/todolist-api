@@ -15,8 +15,8 @@ Após ter instalado as dependências necessárias, rode os comandos abaixo em se
   # Entre na pasta do projeto
   $ cd todolist-api
 
-  # Renomeie o arquivo de variaveis ambiente
-  $ mv .env.example .env
+  # Copie e renomeie o arquivo de variaveis ambiente
+  $ cp .env.example .env
 
   # Instale as dependências
   $ yarn install
@@ -24,11 +24,17 @@ Após ter instalado as dependências necessárias, rode os comandos abaixo em se
   $ npm install
 
   # Rode as migrations para gerar o banco
-  npx prisma migrate init
+  npx prisma migrate dev init
 
   # Rode o projeto em sua máquina
   $ yarn run start
 ```
+
+O projeto vai estar rodando em:
+```bash
+  http://localhost:3333
+```
+
 
 ## Instruções de Testes
 Para rodar os teste em sua maquina basta rodar o comandos abaixo em seu terminal
